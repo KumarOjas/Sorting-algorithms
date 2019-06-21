@@ -1,0 +1,99 @@
+5 1 12 -5 16 :unsorted
+5 1 12  -5 16 5>1,swap
+1 5 12 -5 16  5<12,ok
+1 5 12 -5 16  12>-5,swap
+1 5 -5 12 16  12<16,ok
+1 5 -5 12 16  1<5,ok
+1 5 -5 12 16  5>-5,swap
+1 -5 5 12 16  5<12,ok
+1 -5 5 12 16  1>-5,swap
+-5 1 5 12 16  1<5,ok
+-5 1 5 12 16  -5<1,ok
+-5 1 5 12 16 sorted
+package sorting;
+public class bubblesort
+{
+public static void bubblesort(int array[])
+{
+int n=array.length;
+int k;
+for(int m=n;m>=0;m--)
+{
+k=i+1;
+if(array[i]>array[k]){
+swapNumbers(i,k,array);
+}}
+printNumbers(array);
+}}
+private static void swapNumbers(int i,int j,int[] array){
+int temp;
+temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+private static void swapNumbers(int i,int j,int[]array)
+{
+int temp;
+temp=array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+private static void printNumbers(int [] input)
+{
+for (int i=0;i<input.length;i++){
+System.out.println(input[i]+",");
+}
+System.out.println("/n");
+
+}
+public static void main(String args[]){
+int[] input={4,5,9,3,7,6,0,1};
+bubblesort(input);
+}} 
+Output:
+
+
+4,5,3,7,6,0,1,9,
+4,3,5,6,0,1,7,9,
+3,4,5,0,1,6,7,9, 
+0,1,3,4,5,6,7,9,
+0,1,3,4,5,6,7,9,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
