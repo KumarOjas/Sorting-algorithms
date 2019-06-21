@@ -1,0 +1,74 @@
+/*
+5 1 12 -5 16 2 12 14 
+5 1 12 -5 16 2 12 14 
+|_______|
+-5 1 12 5 16 2 12 14
+   |
+ -5 1 12 5 16 2 12 14
+       |______|
+ -5 1 2 5 16 12 12 14
+        |
+  -5 1 2 5 16 12 12 14
+            |_|  
+   -5 1 2 5 12 16 12 14
+                |_|
+  -5 1 2 5 12 12 16 14 
+                  |__|
+                
+ -5 1 2 5 12 12 14 16
+*/
+
+package sorting ;
+public class slectonsort {
+public static int [] doSelectionSort(int []arr){
+for ( int i=0;i<arr.length-1;i++)
+{ 
+int index =i;
+for (int j=i+1;j<arr.length;j++)
+if(arr[j]<arr[index])
+ index=j;
+int smallerNumber=arr[index];
+arr[index]=arr[i];
+arr[i]=smallerNumber;
+}
+return arr;
+}
+public static void main(String args[]{
+int[] arr1={20,30,45,35,4,5,6};
+int[] arr2=doSelectionSort(arr1);
+for(int i:arr2){
+System.out.println(i);
+System.out.println(",");
+}}}
+Output:
+4,
+5,
+6,
+20,
+30,
+35,
+45,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
